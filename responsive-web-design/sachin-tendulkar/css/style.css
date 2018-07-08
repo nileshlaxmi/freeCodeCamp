@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 1.5px; 
+    box-sizing: border-box;   
+}
+
+body{
+    background-color: #0d26c4;   
+}
+
+#main{
+    display: flex;
+    flex-direction: column; 
+    width: 80%;
+    margin: auto;
+    background-color: #3926a0;
+    border: 1px solid black;
+    border-radius: 2%;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+/* #title{
+text-align: center;     
+} */
+
+#img-div{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#image{
+    width: 50%;
+    height: 50%;  
+    opacity: 0.8; 
+}
+
+#img-caption{
+    position: absolute;
+    bottom: 8px;
+    left: 26%;
+    color: white;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tribute-info{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#timeline{
+    text-align: justify;
+    text-justify: inter-word;
+    width: 85%;
+    margin: auto;
+    background-color: #65267c;
+}
+
+#timeline h3{
+    text-align: center;
+}
+
+#quote-box{
+    width: 95%;
+}
+
+#quote-box{
+    text-align: center;
+}
+
+.quote{
+    width: 40%;
+    height: 100px;
+    display: inline-block;     
+    text-align: justify;
+    text-justify: inter-word;
+    padding-right: 15px;   
+}
+
+.quote-vertical{
+    vertical-align: top;
+}
+
+footer{    
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+footer a{
+    color: rgb(173, 194, 194);
+}
+
+@media screen and (max-width: 480px){
+    .quote{ 
+        width: 80%;       
+        height: 100px;            
+        text-align: justify;
+        text-justify: inter-word;   
+    }
+}
