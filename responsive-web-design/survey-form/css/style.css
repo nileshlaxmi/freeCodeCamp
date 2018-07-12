@@ -1,3 +1,31 @@
+body{
+    background-color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#survey{
+    width: 80%;
+    margin: auto;
+    background-color: #d8ded3;
+}
+
+#title {
+    text-align: center;
+    padding-top: 10px;
+}
+
+#description{
+    text-align: center;
+}
+
+.left-class{
+    margin-left: 30%;
+}
+
+.right-class{
+    margin-right: 20%;
+}
+
 input{
     display: inline-block;
     /*  margin: 10px; */
@@ -16,6 +44,20 @@ input:focus:invalid{
     outline: none;
 }
 
+fieldset{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
 textarea{
     vertical-align: top;
+}
+
+#submit{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
 }
