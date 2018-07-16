@@ -13,26 +13,34 @@
             <div id="div-img"><img src="https://wallpapercave.com/wp/wp2027202.jpg" alt="One Piece" id="header-img" /></div>            
             <p>One Piece</p>
             <nav id="nav-bar">
-                <button class="nav-link">About</button>
-                <button class="nav-link">Features</button>
-                <button class="nav-link">Contact</button>
+                <li><a class="nav-link" href="#about">About</a></li>
+                <li><a class="nav-link" href="#features">Features</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
             </nav>
         </header>
         <main>
-            <video id="video" controls>
-                <source src="https://www.youtube.com/embed/0yA6CuXiAp8" type="type/mp4">                
-            </video>
             
-            <form action="" id="form">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/AKE4jz-awyw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
                 <input type="email" name="email" id="email" placeholder="Enter your email" />
                 <input type="submit" value="Submit" id="submit" />
             </form>
+
+            <div id="about">
+                <h4>about</h4>
+            </div>
+            <div id="features">
+                <h4>features</h4>
+            </div>
+            <div id="contact">
+                <h4>contact</h4>
+            </div>
         </main>
         <footer>
             <p>One Piece is not owned by me. This page is only for educational purpose.</p>
         </footer>
     </div>
-    <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
 </body>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
