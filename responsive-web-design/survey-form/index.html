@@ -15,28 +15,37 @@
         <main>
             <p id="description">Let us know how we can improve freeCodeCamp.</p>
             <form action="" id="survey-form">
-                <label for="name" id="name-label" class="left-class" >Name: </label>
-                <input type="text" name="name" class="right-class" id="name" placeholder="name" required /><br><br>
-                <label for="email" id="email-label" class="left-class" >Email: </label>
-                <input type="email" name="email" class="right-class" id="email" placeholder="email" data-error="@ iss missing" pattern="^([\w.-]+)@([\w.-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?" required/><br><br>
-                <label for="number" id="number-label" class="left-class" >Age: </label>
-                <input type="number" name="age" class="right-class" id="number" placeholder="age" min="1" max="150" pattern="[1-9]*"/><br><br>
-                <label for="dropdown"  class="left-class" >Which option describe you best?</label>
-                <select name="dropdown" id="dropdown">
-                    <option value="Student">Student</option>
-                    <option value="Job">Full Time Job</option>
-                    <option value="Learner">Full Time Learner</option>
-                    <option value="Prefer">Prefer not to say</option>
-                    <option value="Others">Others</option>
-                </select>
-                <br><br>
+                <div id="wrapper">
+                    <div id="left-div">
+                        <label for="name" id="name-label">Name: </label><br><br>
+                        <label for="email" id="email-label">Email: </label><br><br>
+                        <label for="number" id="number-label">Age: </label><br><br>
+                        <label for="dropdown">Which option describe you best?</label><br><br>
+                        <label for="textarea" id="label-textarea">Which project gave you tough time?</label><br><br>
+                    </div>
+                        
+                    <div id="right-div">
+                        <input type="text" name="name" id="name" placeholder=" name" required /><br><br>
+                        <input type="email" name="email" id="email" placeholder=" email" data-error="@ iss missing" pattern="^([\w.-]+)@([\w.-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?" required/><br><br>
+                        <input type="number" name="age" id="number" placeholder=" age" min="1" max="150" pattern="[1-9]*"/><br><br>
+                        <select name="dropdown" id="dropdown">
+                            <option value="Student">Student</option>
+                            <option value="Job">Full Time Job</option>
+                            <option value="Learner">Full Time Learner</option>
+                            <option value="Prefer">Prefer not to say</option>
+                            <option value="Others">Others</option>
+                        </select><br><br>
+                        <textarea name="textarea" id="textarea" cols="30" rows="5" placeholder=" Experience in here.."></textarea>
+                    </div>
+                </div>     
+                <br>
                 <fieldset>
                     <legend>How likely will you recommend to your friend?</legend>
                     <input type="radio" name="radio-buttons" id="r1" class="name" value="r1"><label for="r1">Definitely</label>
                     <input type="radio" name="radio-buttons" id="r2" class="name" value="r2"><label for="r2">Maybe</label>
                     <input type="radio" name="radio-buttons" id="r3" class="name" value="r3"><label for="r3">Not sure</label>                
                 </fieldset>
-
+                <br>
                 <fieldset>
                     <legend>What do you like?</legend>
                     <input type="checkbox" name="Projects" id="Projects" value="c1" /><label for="Projects">Projects</label>
@@ -44,17 +53,11 @@
                     <input type="checkbox" name="OpenSource" id="OpenSource" value="c3" /><label for="OpenSource">Open Source</label>
                     <input type="checkbox" name="Community" id="Community" value="c4" /><label for="Community">Community</label>
                 </fieldset>
-
-                <br><br>
-                <label for="textarea" class="left-class" >Additional Comments:</label>
-                <textarea name="textarea" class="right-class" id="textarea" cols="30" rows="10" placeholder="Comments in here.."></textarea>
-
-                <br><br>
+                <br>
                 <button id="submit">Submit</button>
-
             </form>
         </main>
-        <br><br>
+        <br>
         <footer>&copy; Nilesh Laxmi</footer>
     </div>
 </body>
