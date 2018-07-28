@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    color: white;
 }
 
 #mainDiv{
@@ -12,7 +13,7 @@
 
 #header{
     display: flex;
-    background-color: #9999ff;
+    background-color: #003377;
 }
 
 #div-img{
@@ -20,7 +21,7 @@
 }
 
 #header-img{
-    height: 50%;
+    height: 100%;
     width: 80%;
     object-fit: cover;
 }
@@ -28,16 +29,18 @@
 #header-title{
     width: 40%;
 }
+
 #header-title p{
-    font-size: 25px;
+    font-size: 28px;
     text-align: center;
+    margin-top: 3.5rem;
 }
 
 #div-navbar{
     width: 30%;
-    top: 30px;
-    position: fixed;
-    right: 3%;
+    top: 50px;
+    position: absolute;
+    right: 1%;
 }
 
 li{
@@ -48,18 +51,19 @@ li{
 
 li a {
     text-decoration: none;
-    color: brown;
+    color: white;
 }
 
 main{
-    background-color: #a3a3ff;
+    background-color: #003399;
 }
 
 #video{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;    
+    width: 50%; 
+    margin-top: 10px;   
 }
 
 @media screen and (max-width: 480px){
@@ -69,6 +73,60 @@ main{
     }
 }
 
-footer{
-    background-color: #9999ff;
+#form{
+    /* margin-left: 40%; */
+    margin: 15px 0 15px 40%;
 }
+
+input{
+    color: black;
+}
+
+#about, #features, #contact{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    background-color: #414a89;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .20rem;
+    margin: 0 0 30px 10%;
+    padding: 5px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
+}
+
+#about, #features{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#about h3{
+    text-align: center;
+}
+
+#features h3{
+    text-align: center;
+}
+
+#contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+/* #contact p{
+    display: inline-block;
+} */
+
+#contact a{
+    text-decoration: none;
+}
+
+#contact a:hover{
+    color: red;
+}
+
+footer{
+    background-color: #003377;
+    font-size: 16px;
+    text-align: center;
+}
+
