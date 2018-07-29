@@ -28,12 +28,16 @@
 **Links:** 
 
 *Github:*
+https://github.com/nileshlaxmi/freeCodeCamp/tree/master/responsive-web-design/technical-document-page
 
 *Codepen:*
+https://codepen.io/NileshLaxmi/pen/pZyQeQ
 
 #### Portfolio Page
 **Links:** 
 
 *Github:*
+https://github.com/nileshlaxmi/freeCodeCamp/tree/master/responsive-web-design/portfolio-page
 
 *Codepen:*
+https://codepen.io/NileshLaxmi/pen/oqjBqe
