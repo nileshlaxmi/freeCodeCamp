@@ -1,41 +1,95 @@
+*{
+    box-sizing: border-box;
+}
 body{
     display: flex;
     flex-direction: column;
+    background-color: #070505;
 }
 
 #wrapper{
     width: 93%;
     border: 1px solid brown;
     margin: auto;
+    color: floralwhite;
+    background-color: #432e2e;
 }
 
 a{
     text-decoration: none;
+    color: floralwhite;
 }
 
 a:hover{
-    color: red;
+    color: rgb(54, 230, 236);
 }
 
 #welcome-section{
     text-align: center;
+    background-color: #d60000;
+    margin: 10px;
+    padding: 10px;
+}
+
+#div-nav{
+    margin: 10px;
+    padding: 10px;
+    background-color: #ff0000;  
 }
 
 #navbar{
-    /* position: fixed;
-    top: 0; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     list-style: none;
-    margin: 10px 20px 10px 20px;
 }
 
 #navbar li{
     display: inline-block;
 }
 
+#div-about{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding: 10px;
+}
+
+#about-img{
+    width: 40%;
+}
+
+#about-img img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#about-details{
+    width: 50%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#about-details h3{
+    text-align: center;
+}
+
+
 #div-skills{
     width: 80%;
     margin: auto;
+    
 }
+
+#div-skills h3{
+    text-align: center;
+}
+
 
 #skill-header{
     display: inline-block;
@@ -69,6 +123,12 @@ a:hover{
     }
 }
 
+#projects{
+    text-align: center;
+    /* margin: 10px; */
+    padding: 10px;
+}
+
 .project-tile{
     display: inline-block;
     width: 200px;
@@ -77,4 +137,42 @@ a:hover{
     box-shadow: 0 8px 5px 1px #888888;
     margin: 20px;
     margin-bottom: 15px;
+}
+
+#contact{
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    width: 80%;
+    background-color: #ff0000;
+}
+
+#contact input{
+    display: block;
+    margin: 20px;
+    margin-left: 30%;
+    width: 50%;
+}
+
+#contact textarea{
+    display: block;
+    margin: 20px;
+    margin-left: 30%;
+    width: 50%;
+}
+
+#contact button{
+    display: block;
+    margin-top: 20px;
+    margin-left: 47%;
+    padding: 10px;
+    width: 80px;
+}
+
+#div-footer{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    background-color: #d60000;
+    justify-content: space-around;
 }

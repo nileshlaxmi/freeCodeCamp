@@ -50,7 +50,6 @@ a:hover{
 }
 
 #main-doc header{
-    /* text-align: center; */
     font-size: 25px;
 }
 
@@ -67,7 +66,6 @@ a:hover{
     padding: 15px;
     margin-left: 15px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
-    /* background-color: #d8d0de; */
     text-align: justify;
     text-justify: inter-word;
 }
@@ -77,5 +75,4 @@ a:hover{
     background-color: #d8d0de;
     color: black;
     padding: 10px 10px 10px 20px;
-    /* padding-left: 20px; */
 }
