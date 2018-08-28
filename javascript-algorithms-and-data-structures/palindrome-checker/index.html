@@ -9,12 +9,14 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div>
-        <h2>Palindrome Checker</h2>
-        <input type="text" id="ipText" pattern="/^[0-9]{4}$/g">&nbsp;&nbsp;
-        <button onclick="palindrome()">Check</button>
-        <button onclick="clearFields()">Clear</button>
-        <strong><p id="opText"></p></strong>
+    <div id="outer">
+        <div id="inner">
+            <h2>Palindrome Checker</h2>
+            <input type="text" id="ipText" pattern="/^[0-9]{4}$/g">&nbsp;&nbsp;
+            <button onclick="palindrome()">Check</button>
+            <button onclick="clearFields()">Clear</button>
+            <strong><p id="opText"></p></strong>
+        </div>        
     </div>
     <script src="js/app.js"></script>
 </body>
