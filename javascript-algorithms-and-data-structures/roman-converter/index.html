@@ -9,12 +9,14 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div>
-        <h2>Roman Number Converter</h2>
-        <input type="text" id="ipText" pattern="/^[0-9]{4}$/g">
-        <button onclick="romanConverter()">Convert</button>
-        <button onclick="clearFields()">Clear</button>
-        <strong><p id="opText"></p></strong>
+    <div id="outer">
+        <div id="inner">
+            <h2>Roman Number Converter</h2>
+            <input type="text" id="ipText" pattern="/^[0-9]{4}$/g">
+            <button onclick="romanConverter()">Convert</button>
+            <button onclick="clearFields()">Clear</button>
+            <strong><p id="opText"></p></strong>
+        </div>        
     </div>
     <script src="js/app.js"></script>
 </body>

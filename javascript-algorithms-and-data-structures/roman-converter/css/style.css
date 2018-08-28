@@ -1,18 +1,23 @@
 body{
-    background: #000;
+    background-color: #000;
 }
 
-div{
+#outer{    
     position: relative;
+    background-color: #000;
+    height: 550px;
+}
+
+#inner{
+    position: absolute;
     margin: auto;
-    display: block;
-    margin-top: 10%;
-    border: 2px solid black;
+    top: 0; left: 0; bottom: 0; right: 0;
+    border: 2px solid #666;
     height: 200px;
-    width: 400px;
-    padding: 20px 10px 0 20px;
-    background-color: #e6e6ff;
+    width: 600px;    
+    background-color: #ce0000;
     border-radius: 10px;
+    color: #fff;
 }
 
 h2{
@@ -31,6 +36,8 @@ button{
     margin: 5px;
     font-weight: bold;
     letter-spacing: 1px;
+    background-color: #720000;
+    color: #fff;
 }  
 
 #opText{
