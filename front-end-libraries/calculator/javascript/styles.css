@@ -1,0 +1,30 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: azure;
+}
+
+h1 {
+  margin: 16px;
+  padding: 0;
+  text-align: center;
+}
+
+.outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner {
+  height: 400px;
+  width: 400px;
+  background-color: black;
+}
+
+.inner button{
+    height: 64px;
+    width: 64px;
+    background-color: #666666;
+}
