@@ -2,38 +2,42 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Calculator</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="header"><h1>Calculator</h1></div>
-    <div class="outer">
-      <div class="inner">
-        <div class="display">
-          <div class="formulaScreen">89+9=98</div>
-          <div class="outputScreen" id="display">98</div>
-        </div>
-        <div class="buttons">
-          <button>+</button>
-          <button>-</button>
-          <button>*</button>
-          <button>/</button>
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
-          <button>4</button>
-          <button>5</button>
-          <button>6</button>
-          <button>7</button>
-          <button>8</button>
-          <button>9</button>
-          <button>0</button>
-          <button>.</button>
-          <button>C</button>
-          <button>=</button>
-        </div>
+    <div class="calculator">
+      <h1>Calculator</h1>
+      <div class="displayScreen" id="display">0</div>
+      <div class="outputScreen" id="result">0</div>
+      <div class="buttons">
+        <button id="add" onclick="onOperatorClick('+')">+</button>
+        <button id="subtract" onclick="onOperatorClick('-')">-</button>
+        <button id="multiply" onclick="onOperatorClick('*')">*</button>
+        <button id="divide" onclick="onOperatorClick('/')">/</button>
+
+        <button id="seven" onclick="onNumberClick(7)">7</button>
+        <button id="eight" onclick="onNumberClick(8)">8</button>
+        <button id="nine" onclick="onNumberClick(9)">9</button>
+        <button id="clear" onclick="onClear()">C</button>
+
+        <button id="four" onclick="onNumberClick(4)">4</button>
+        <button id="five" onclick="onNumberClick(5)">5</button>
+        <button id="six" onclick="onNumberClick(6)">6</button>
+        <button id="equals" onclick="onCalculate()">=</button>
+
+        <button id="one" onclick="onNumberClick(1)">1</button>
+        <button id="two" onclick="onNumberClick(2)">2</button>
+        <button id="three" onclick="onNumberClick(3)">3</button>
+        <button id="decimal" onclick="onNumberClick('.')">.</button>
+
+        <button
+          id="zero"
+          onclick="onNumberClick(0)"
+          style="grid-column: span 4"
+        >
+          0
+        </button>
       </div>
     </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
