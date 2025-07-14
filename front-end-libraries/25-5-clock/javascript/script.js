@@ -12,6 +12,12 @@ const timeLeftElem = document.getElementById('time-left');
 const timerLabelElem = document.getElementById('timer-label');
 const beepSound = document.getElementById('beep');
 
+// Control buttons
+const breakDecrementBtn = document.getElementById('break-decrement');
+const breakIncrementBtn = document.getElementById('break-increment');
+const sessionDecrementBtn = document.getElementById('session-decrement');
+const sessionIncrementBtn = document.getElementById('session-increment');
+
 // Format time in mm:ss
 function formatTime(seconds) {
   const m = Math.floor(seconds / 60);
@@ -25,6 +31,18 @@ function updateDisplay() {
   breakLengthElem.textContent = breakLength;
   sessionLengthElem.textContent = sessionLength;
   timerLabelElem.textContent = isSession ? 'Session' : 'Break';
+  updateDisabledButtons();
+}
+
+// Enable/Disable buttons visually and functionally
+function updateDisabledButtons() {
+  // Break
+  breakDecrementBtn.classList.toggle('disabled-btn', breakLength <= 1);
+  breakIncrementBtn.classList.toggle('disabled-btn', breakLength >= 60);
+
+  // Session
+  sessionDecrementBtn.classList.toggle('disabled-btn', sessionLength <= 1);
+  sessionIncrementBtn.classList.toggle('disabled-btn', sessionLength >= 60);
 }
 
 // Timer logic
@@ -36,16 +54,8 @@ function startTimer() {
       timeLeft--;
     } else {
       beepSound.play();
-
-      if (isSession) {
-        // Start break
-        isSession = false;
-        timeLeft = breakLength * 60;
-      } else {
-        // Start session
-        isSession = true;
-        timeLeft = sessionLength * 60;
-      }
+      isSession = !isSession;
+      timeLeft = (isSession ? sessionLength : breakLength) * 60;
     }
     updateDisplay();
   }, 1000);
@@ -120,7 +130,7 @@ updateDisplay();
 // Event listeners
 document.getElementById('start_stop').addEventListener('click', toggleTimer);
 document.getElementById('reset').addEventListener('click', resetTimer);
-document.getElementById('break-increment').addEventListener('click', incrementBreak);
-document.getElementById('break-decrement').addEventListener('click', decrementBreak);
-document.getElementById('session-increment').addEventListener('click', incrementSession);
-document.getElementById('session-decrement').addEventListener('click', decrementSession);
+breakIncrementBtn.addEventListener('click', incrementBreak);
+breakDecrementBtn.addEventListener('click', decrementBreak);
+sessionIncrementBtn.addEventListener('click', incrementSession);
+sessionDecrementBtn.addEventListener('click', decrementSession);
