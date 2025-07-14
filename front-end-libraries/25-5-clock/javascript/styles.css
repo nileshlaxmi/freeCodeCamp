@@ -115,3 +115,8 @@ button:active {
 .fa {
   pointer-events: none;
 }
+
+.disabled-btn {
+  opacity: 0.5;
+  pointer-events: none;
+}
