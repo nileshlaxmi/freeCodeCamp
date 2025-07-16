@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Roman Number Converter</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div id="container">
-    <div id="card">
-      <h2>Telephone Number Validator</h2>
-      <input type="text" id="number" placeholder="Enter a number (1-3999)" />
-      <div class="btn-group">
-        <button id="convert-btn" onclick="numberValidator()">Convert</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telephone Number Validator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="outer">
+      <div id="inner">
+        <h1>Telephone Number Validator</h1>
+        <input
+          type="text"
+          id="user-input"
+          placeholder="Enter telephone number"
+        />
+        <button id="check-btn" onclick="numberValidator()">Validate</button>
         <button id="clear-btn" onclick="clearFields()">Clear</button>
+        <p id="results-div"></p>
       </div>
-      <p id="output"></p>
     </div>
-  </div>
-  <script src="script.js"></script>
-</body>
+
+    <script src="script.js"></script>
+  </body>
 </html>

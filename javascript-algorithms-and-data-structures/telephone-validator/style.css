@@ -1,0 +1,87 @@
+/* Reset and base layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+
+  /* Sunset gradient background */
+  background-color: #ff9a8b;
+  background-image: linear-gradient(
+    to bottom,
+    #ff9a8b 0%,
+    #ff6a88 50%,
+    #ff99ac 100%
+  );
+}
+
+/* Outer container */
+#outer {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  width: 90%;
+  max-width: 400px;
+}
+
+/* Inner content styling */
+#inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+/* Heading */
+h1 {
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Input field */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  background-color: #fff5f5;
+  color: #333;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #ff6a88;
+  color: white;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #ff4d6d;
+}
+
+/* Output text */
+#output {
+  color: white;
+  font-size: 1.2rem;
+  min-height: 1.5rem;
+}
