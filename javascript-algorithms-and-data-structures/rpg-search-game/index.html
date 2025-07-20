@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RPG Search Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="container">
+    <div id="card">
+      <h2>RPG Search Game</h2>
+      <input type="text" id="search-input" placeholder="Enter name" />
+      <div class="btn-group">
+        <button id="search-button" onclick="searchCreature()">Convert</button>
+        <button id="clear-btn" onclick="clearField()">Clear</button>
+      </div>
+      <div>
+        <div id="creature-name"></div>
+        <div id="creature-id"></div>
+        <div id="weight"></div>
+        <div id="height"></div>
+        <div id="types"></div>
+        <div id="hp"></div>
+        <div id="attack"></div>
+        <div id="defense"></div>
+        <div id="special-attack"></div>
+        <div id="special-defense"></div>
+        <div id="speed"></div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
