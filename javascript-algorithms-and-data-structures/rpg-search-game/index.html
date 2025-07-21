@@ -10,10 +10,10 @@
   <div id="container">
     <div id="card">
       <h2>RPG Search Game</h2>
-      <input type="text" id="search-input" placeholder="Enter name" />
+      <input type="text" id="search-input" placeholder="Enter name or id" required />
       <div class="btn-group">
-        <button id="search-button" onclick="searchCreature()">Convert</button>
-        <button id="clear-btn" onclick="clearField()">Clear</button>
+        <button id="search-button" onclick="getCreature()">Search</button>
+        <button id="clear-btn" onclick="clearFields()">Clear</button>
       </div>
       <div>
         <div id="creature-name"></div>
