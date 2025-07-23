@@ -1,0 +1,94 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+/* Container */
+#outer {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 90%;
+  max-width: 400px;
+}
+
+/* Inner content layout */
+#inner {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Title */
+#inner h2 {
+  text-align: center;
+  font-size: 26px;
+  letter-spacing: 1px;
+  color: #ffd700;
+}
+
+/* Input */
+#ipText {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #000;
+}
+
+#ipText::placeholder {
+  color: #777;
+}
+
+/* Buttons */
+button {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+button:hover {
+  transform: scale(1.03);
+}
+
+/* Convert button */
+button:first-of-type {
+  background-color: #00c6ff;
+  color: #fff;
+}
+
+/* Clear button */
+button:last-of-type {
+  background-color: #ff4e50;
+  color: #fff;
+}
+
+/* Output */
+#opText {
+  text-align: center;
+  font-size: 18px;
+  color: #00ffcc;
+  min-height: 24px;
+  word-wrap: break-word;
+}
