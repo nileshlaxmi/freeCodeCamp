@@ -1,4 +1,3 @@
-// let lati, longi, urlString, tempCelsius, tempFahrenheit, tempUnit = 'C', weatherMain;
 const api = "https://weather-proxy.freecodecamp.rocks/api/current?";
 let tempCelsius, tempFahrenheit, tempUnit = 'C';
 
