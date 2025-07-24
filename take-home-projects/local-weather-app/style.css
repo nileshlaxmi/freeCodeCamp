@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to top right, #0f2027, #203a43, #2c5364);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  overflow: hidden;
+}
+
+.imgBox {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.imgBox::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: var(--bg-img, url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80'));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.5);
+  z-index: -1;
+}
+
+.weather-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 30px 40px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  min-width: 300px;
+  max-width: 90%;
+}
+
+#loc {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+#country {
+  font-size: 1.2em;
+  color: #ccc;
+}
+
+#temperature {
+  margin: 20px 0;
+  font-size: 3em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#temperature span {
+  margin-left: 8px;
+  font-size: 1.5em;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+#temperature span:hover {
+  color: #ffdf00;
+}
+
+#weather {
+  font-size: 1.2em;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.weather-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+}
