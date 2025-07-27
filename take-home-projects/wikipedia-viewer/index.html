@@ -1,30 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Wikipedia Viewer</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-  <!-- Latest compiled and minified JavaScript -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <div class="container-fluid">
-    <h2 class="text-center">Wikipedia Viewer</h2>
-    <h4 class="text-center">freeCodeCamp Frontend Project</h4>
-    <p id="img-tag"><a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank"><img src="http://vuquangson.com/wp-content/uploads/2017/06/random-icon.png" alt="Random Post"></a></p>
-    <input type="text" placeholder=" text" id="search-tag">
-    <button type="button" name="button" id="search-button" class="btn btn-primary">Search</button>
-    <div id="searchDiv">
-      <ul id="result"></ul>      
+  <div class="container">
+    <h2>Wikipedia Viewer</h2>
+    <h4>freeCodeCamp Frontend Project</h4>
+
+    <div class="random-link">
+      <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" title="Click for a random article">
+        <img
+          src="https://img.icons8.com/?size=100&id=91479&format=png&color=000000"
+          alt="Random Article"
+        />
+      </a>
+    </div>
+
+    <div class="search-box">
+      <input type="text" id="search-tag" placeholder="Search Wikipedia..." />
+      <button id="search-button">Search</button>
+    </div>
+
+    <!-- 🔄 Loading Spinner -->
+    <div class="spinner" id="spinner" style="display: none;"></div>
+
+    <div id="search-div">
+      <ul id="result"></ul>
     </div>
   </div>
+
   <script src="script.js"></script>
 </body>
-
 </html>
