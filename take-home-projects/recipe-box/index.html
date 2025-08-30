@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Box</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🍲 Recipe Box</h1>
+
+    <!-- Add Recipe Form -->
+    <div class="form-container">
+      <input type="text" id="recipeName" placeholder="Recipe Name">
+      <textarea id="recipeIngredients" placeholder="Ingredients (comma separated)"></textarea>
+      <button id="addRecipeBtn">Add Recipe</button>
+    </div>
+
+    <!-- Recipe List -->
+    <div class="recipe-list">
+      <h2>My Recipes</h2>
+      <ul id="recipeList"></ul>
+    </div>
+
+    <!-- Recipe Details Modal -->
+    <div id="recipeModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalIngredients"></p>
+        <button id="editRecipeBtn">Edit</button>
+        <button id="deleteRecipeBtn" class="danger">Delete</button>
+      </div>
+    </div>
+
+    <!-- Edit Modal -->
+    <div id="editModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Edit Recipe</h2>
+        <input type="text" id="editName">
+        <textarea id="editIngredients"></textarea>
+        <button id="saveEditBtn">Save</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

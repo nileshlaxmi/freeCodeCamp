@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.container {
+  background: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  width: 90%;
+  max-width: 600px;
+}
+
+h1 {
+  text-align: center;
+  color: #ff6347;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  background: #ff6347;
+  color: white;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #e5533d;
+}
+
+button.danger {
+  background: #dc3545;
+}
+
+.recipe-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.recipe-list li {
+  padding: 12px;
+  margin: 8px 0;
+  background: #f4f4f4;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.recipe-list li:hover {
+  background: #ffe0d6;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background: white;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+}
+
+.close {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
